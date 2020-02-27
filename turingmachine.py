@@ -8,7 +8,7 @@ class TuringMachine:
         array_index = index
         stage_to_go = state
         array_length = len(self.array)
-        while array_index <= array_length:
+        while True:
             try:
                 actual_state = self.states[stage_to_go]
                 for transition in actual_state:
